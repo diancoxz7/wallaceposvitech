@@ -1,0 +1,10 @@
+Options +FollowSymlinks
+Options -MultiViews
+RewriteEngine on
+RewriteBase /api/
+RewriteCond %{REQUEST_URI} !wpos.php
+RewriteRule ^(.*)$ wpos.php?a=$1 [L,NS,QSA]
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END

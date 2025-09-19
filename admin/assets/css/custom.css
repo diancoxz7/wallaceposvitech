@@ -1,0 +1,5 @@
+.icon-dollar:before {
+    content: "Rp";
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
